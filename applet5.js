@@ -84,3 +84,8 @@ async getWeatherDataByCoordinates(latitude, longitude) {
         if (response.ok) {
             return await response.json();
         }
+    } catch (error) {
+        console.error('Error fetching weather data by coordinates:', error);
+    }
+    return null;
+}
