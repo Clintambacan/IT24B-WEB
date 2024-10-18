@@ -9,3 +9,5 @@ class WeatherApp {
 
         this.weatherCard = document.getElementById('weatherCard');
         this.cityName = document.getElementById('cityName');
+        this.temperature = document.getElementById('temperature');
+        this.description = document.getElementById('description');
