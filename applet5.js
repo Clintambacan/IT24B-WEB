@@ -17,3 +17,6 @@ class WeatherApp {
         this.getWeatherBtn.addEventListener('click', () => this.fetchWeather());
         this.getLocationBtn.addEventListener('click', () => this.fetchWeatherByLocation());
     }
+    
+    displayWeather(data) {
+        this.cityName.textContent = `${data.name}, ${data.sys.country} (${data.coord.lat}, ${data.coord.lon})`;
