@@ -30,3 +30,4 @@ class CardSearch {
 document.addEventListener('DOMContentLoaded', () => {
     new CardSearch('cardSearch', 'cardContainer'); 
 });
+
