@@ -95,3 +95,11 @@ class WeatherApp{
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${this.apiKey}&units=metric`);
             if (response.ok) {
                 return await response.json();
+            }
+        } catch (error) {
+            console.error('Error fetching weather data by coordinates:', error);
+        }
+        return null;
+    }
+    
+}
