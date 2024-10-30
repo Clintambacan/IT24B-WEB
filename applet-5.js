@@ -82,4 +82,6 @@ class WeatherApp{
         try {
             const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${this.apiKey}&units=metric`);
             if (response.ok) {
+                return await response.json();
+            }
 
