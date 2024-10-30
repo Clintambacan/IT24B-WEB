@@ -89,3 +89,6 @@ class WeatherApp{
         }
         return null;
     }
+
+    async getWeatherDataByCoordinates(latitude, longitude) {
+        try {
