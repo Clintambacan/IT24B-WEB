@@ -78,3 +78,5 @@ class WeatherApp{
             alert('Geolocation is not supported by this browser.');
         }
     }
+    async getWeatherData(city) {
+        try {
