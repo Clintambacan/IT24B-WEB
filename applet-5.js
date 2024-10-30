@@ -84,4 +84,6 @@ class WeatherApp{
             if (response.ok) {
                 return await response.json();
             }
-
+        } catch (error) {
+            console.error('Error fetching weather data:', error);
+        }
