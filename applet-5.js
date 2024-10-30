@@ -38,7 +38,7 @@ class WeatherApp{
             super();
             this.apiKey = '';
         }   
-    }
+    
     async fetchWeather() {
         this.apiKey = this.APIKeyInput.value.trim(); 
 
